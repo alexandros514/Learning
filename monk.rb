@@ -1,9 +1,13 @@
-
-def keke
-  puts "Write your secret msg: "
-msg= gets.chomp().to_s
-msgke=msg.split("").join("keke")
-puts msgke
+def keke(x)
+  x.chars.join("ke")
 end
 
-puts keke
+def menu(u_input)
+  loop do
+  puts "whats the word i need to see?"
+  u_input= gets.chomp().to_s
+   if u_input == "qq"
+     break
+   end
+ end
+end
