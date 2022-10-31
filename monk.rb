@@ -3,15 +3,15 @@ def keke(x)
 end
 
 def menu
-  puts "welcome to kekeifier"
+  puts "==Welcome to Kekeifier=="
   loop do
   puts "whats the word i need to see?"
   u_input= gets.chomp().to_s
     if u_input == "qq"
-      puts "OK bye bye :()"
+      puts "OK bye bye :("
       break
     else
-       puts keke(u_input)
+       puts "Your KEKE phrase: " +keke(u_input)
    end
  end
 end
