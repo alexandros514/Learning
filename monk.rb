@@ -2,7 +2,7 @@ def keke(x)
   x.chars.join("ke")
 end
 
-def menu(u_input)
+def menu
   loop do
   puts "whats the word i need to see?"
   u_input= gets.chomp().to_s
