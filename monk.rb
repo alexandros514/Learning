@@ -5,8 +5,10 @@ end
 
 def long_string(a)
   t=a.length.to_i
-  if x >= 10
-    puts "phrase too long to KEKE... ." + "(#{a})"
+  if t >= 10
+    return true
+  else
+    return false
   end
 end
 
@@ -20,10 +22,12 @@ def menu
     if u_input == "qq"
       puts "OK bye bye :("
       break
-    elsif long_string("#{u_input}") >= 10
+    elsif long_string(u_input)
       puts "phrase too long to KEKE... ." + "(#{u_input})"
     else
        puts "Your KEKE phrase: " +keke(u_input)
    end
  end
 end
+
+menu
