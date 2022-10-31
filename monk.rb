@@ -2,6 +2,16 @@ def keke(x)
   x.chars.join("ke")
 end
 
+
+def long_string(a)
+  t=a.length.to_i
+  if x >= 10
+    puts "phrase too long to KEKE... ." + "(#{a})"
+  end
+end
+
+
+
 def menu
   puts "==Welcome to Kekeifier=="
   loop do
@@ -10,6 +20,8 @@ def menu
     if u_input == "qq"
       puts "OK bye bye :("
       break
+    elsif long_string("#{u_input}") >= 10
+      puts "phrase too long to KEKE... ." + "(#{u_input})"
     else
        puts "Your KEKE phrase: " +keke(u_input)
    end
