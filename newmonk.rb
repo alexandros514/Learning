@@ -16,6 +16,7 @@ def load_client
   last_name=new_client[1]
   phone=new_client[2]
   notes=new_client[3]
+Client.new(first_name, last_name, phone, notes)
 end
 
 
