@@ -6,11 +6,16 @@ class Client
     @last_name= last_name
     @phone=phone
     @notes=notes
+
   end
 end
 
 def load_client
-  new_client= File.read("client.csv").split
+  new_client= File.read("client.csv").split(",")
+  first_name=new_client[0]
+  last_name=new_client[1]
+  phone=new_client[2]
+  notes=new_client[3]
 end
 
 
