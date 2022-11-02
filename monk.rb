@@ -30,3 +30,7 @@ def menu
 end
 
 menu
+
+a = File.read("monk.txt")
+
+File.write("monk.txt")
