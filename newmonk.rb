@@ -56,7 +56,7 @@ def menu
       @client.notes =gets.chomp().to_s
 
     else user_input==0
-      File.write('client.csv', "#{@client.first_name},#{@client.last_name},#{@client.phone},#{@client.notes}")
+      File.write('client.csv', @client.to_csv)
       break
     end
   end
