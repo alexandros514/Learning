@@ -48,3 +48,4 @@ end
 load_stocks
 
 puts @name.class
+puts "ruby on rails!"
